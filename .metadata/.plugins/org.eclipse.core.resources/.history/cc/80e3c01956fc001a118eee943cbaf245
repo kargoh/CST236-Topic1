@@ -1,0 +1,9 @@
+<?php
+
+require_once 'Car.php';
+
+$raceCar = new Car();
+
+$raceCar->addTires(1);
+
+?>

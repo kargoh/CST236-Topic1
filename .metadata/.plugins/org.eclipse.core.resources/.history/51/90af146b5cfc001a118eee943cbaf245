@@ -1,0 +1,16 @@
+<?php
+
+require_once 'SuperHero.php';
+
+$ultraMan = new SuperHero("Miguel");
+$unstoppable = new SuperHero("Howard");
+
+while($ultraMan->isHeDead() == FALSE && $unstoppable->isHeDead() == FALSE){
+    $ultraMan->attack($unstoppable);
+    echo $unstoppable->name . " has " . $unstoppable->getHealth() . " health.<br>";
+    $unstoppable->attack($ultraMan);
+    echo $ultraMan->name . " has " . $ultraMan->getHealth() . " health.<br>";
+    echo "<hr>";
+}
+
+?>

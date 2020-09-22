@@ -1,0 +1,20 @@
+<?php
+
+require_once 'Person.php';
+
+class SuperHero extends Person {
+    
+    private $hasCape;
+    
+    public function obtainACape() {
+        $this->hasCape = True;
+    }
+    
+    public function loseCape() {
+        $this->hasCape = False;
+    }
+}
+
+
+
+?>

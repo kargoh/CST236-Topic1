@@ -1,0 +1,20 @@
+<?php
+
+class Car {
+    private $tires;
+    private $hasEngine;
+    private $tirePressure;
+    private $isRunning;
+    
+    public function addTires($numberofNewTires) {
+        if ($numberOfNewTires > 0 && $numberOfNewTires <= 4){
+            if ($this->tires + $numberofNewTires > 4) {
+                echo "You can only have a maximum of four tires. Try again.";
+            }
+        }else {
+            echo "That is an invalid number of new tires. Nice try<br>";
+        }
+    }
+}
+
+?>

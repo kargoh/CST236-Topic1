@@ -1,0 +1,7 @@
+<?php
+
+require_once 'SuperHero.php';
+
+$ultraMan = new SuperHero("Miguel");
+
+?>

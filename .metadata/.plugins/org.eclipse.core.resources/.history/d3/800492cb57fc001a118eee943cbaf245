@@ -1,0 +1,62 @@
+<?php
+
+class Car {
+    private $tires;
+    private $hasEngine;
+    private $tirePressure;
+    private $isRunning;
+    
+    public function addTires($numberofNewTires) {
+        if ($numberofNewTires > 0 && $numberofNewTires <= 4){
+            if ($this->tires + $numberofNewTires > 4) {
+                echo "You can only have a maximum of four tires. Try again.";
+            } else {
+                $this->tires =  $this->tires + $numberofNewTires;
+                echo "You installed " . $numberofNewTires . " tires. You now have " . $this->tires . " tires on your car.";
+            }
+        }else {
+            echo "That is an invalid number of new tires. Nice try<br>";
+        }
+    }
+    
+    public function start() {
+        $isRunning = true;
+        echo "You have started the car.";
+    }
+    
+    public function stop() {
+        $isRunning = false;
+        echo "You have stopped the car.";
+    }
+    
+    public function restart() {
+        $isRunning = false;
+        echo "You have restarted the car.";
+    }
+    
+    public function installEngine() {
+        $hasEngine = true;
+        echo "You have installed the engine.";
+    }
+    
+    public function setSpeed($speed) {
+        if ($speed >= 0){
+            echo "You are currently driving at " . $speed . " mph";
+        }else {
+            echo "That is an invalid speed. Nice try<br>";
+        }
+    }
+    
+    public function inflateTiresTo($psi) {
+        if ($psi >= 0){
+            echo "You set the tires to " . $speed . " psi";
+        }else {
+            echo "That is an invalid psi. Nice try<br>";
+        }
+    }
+    
+}
+
+    
+
+?>

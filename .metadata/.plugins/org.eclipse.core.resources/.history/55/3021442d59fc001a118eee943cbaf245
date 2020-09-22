@@ -1,0 +1,12 @@
+<?php
+
+require_once 'Person.php';
+
+class SuperHero extends Person {
+    
+    private $hasCape
+}
+
+
+
+?>

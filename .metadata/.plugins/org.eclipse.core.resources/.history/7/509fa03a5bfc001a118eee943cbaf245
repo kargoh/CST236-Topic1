@@ -1,0 +1,15 @@
+<?php
+
+require_once 'SuperHero.php';
+
+$ultraMan = new SuperHero("Miguel");
+
+$ultraMan->capeStatus();
+$ultraMan->obtainACape();
+$ultraMan->capeStatus();
+
+echo "Ultraman is " . $ultraMan->isHeDead() . ".<br>";
+
+echo "Ultraman is " . $ultraMan->getHealth() . ".<br>";
+
+?>
